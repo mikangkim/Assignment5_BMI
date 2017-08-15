@@ -6,9 +6,9 @@ using System.Windows.Forms;
 
 /* Name : Mikang Kim
  * Student ID : 300921431
- * Date : August 14, 2017
+ * Date : August 15, 2017
  * Description : Assignment5 BMI Calculator
- * Version : 0.1 - Created the BMI calculator form
+ * Version : 0.3 Set up the Notice message after calculating BMI
  */
 
 namespace Assignment5_BMI

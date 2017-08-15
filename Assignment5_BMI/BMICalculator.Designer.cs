@@ -1,8 +1,8 @@
 ﻿/* Name : Mikang Kim
  * Student ID : 300921431
- * Date : August 14, 2017
+ * Date : August 15, 2017
  * Description : Assignment5 BMI Calculator
- * Version : 0.2 Design Changed
+ * Version : 0.3 Set up the Notice message after calculating BMI
  */
 namespace Assignment5_BMI
 {
@@ -113,6 +113,7 @@ namespace Assignment5_BMI
             this.RadioButton.Text = "Imperial";
             this.RadioButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RadioButton.UseVisualStyleBackColor = true;
+            this.RadioButton.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
             // RadioButton1
             // 
@@ -125,6 +126,7 @@ namespace Assignment5_BMI
             this.RadioButton1.TabIndex = 1;
             this.RadioButton1.Text = "Metric";
             this.RadioButton1.UseVisualStyleBackColor = true;
+            this.RadioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
             // WeightLabel
             // 
@@ -147,6 +149,7 @@ namespace Assignment5_BMI
             this.HeightTextBox.Size = new System.Drawing.Size(281, 45);
             this.HeightTextBox.TabIndex = 3;
             this.HeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.HeightTextBox.TextChanged += new System.EventHandler(this.HeightTextBox_TextChanged);
             // 
             // WeightTextBox
             // 
@@ -184,6 +187,7 @@ namespace Assignment5_BMI
             this.CalculateBMIButton.TabStop = false;
             this.CalculateBMIButton.Text = "Cal";
             this.CalculateBMIButton.UseVisualStyleBackColor = false;
+            this.CalculateBMIButton.Click += new System.EventHandler(this.CalculateBMIButton_Click);
             // 
             // ResetButton
             // 
@@ -217,6 +221,7 @@ namespace Assignment5_BMI
             this.BMIResultTextBox.Name = "BMIResultTextBox";
             this.BMIResultTextBox.Size = new System.Drawing.Size(138, 45);
             this.BMIResultTextBox.TabIndex = 9;
+            this.BMIResultTextBox.TextChanged += new System.EventHandler(this.BMIResultTextBox_TextChanged);
             // 
             // BMICalculator
             // 
@@ -228,6 +233,7 @@ namespace Assignment5_BMI
             this.Controls.Add(this.BMIScaleTextBox);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(7);
             this.MaximizeBox = false;

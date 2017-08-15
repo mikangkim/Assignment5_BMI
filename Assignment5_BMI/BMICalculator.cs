@@ -9,19 +9,81 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 /* Name : Mikang Kim
  * Student ID : 300921431
- * Date : August 14, 2017
+ * Date : August 15, 2017
  * Description : Assignment5 BMI Calculator
- * Version : 0.2 Design Changed
+ * Version : 0.3 Set up the Notice message after calculating BMI
  */
 namespace Assignment5_BMI
 {
     public partial class BMICalculator : Form
     {
+
+        /// <summary>
+        /// This is Private instance variables
+        /// </summary>
+        private double myHeight;
+        private double myWeight;
+        private double myBMI;
+
+        /// <summary>
+        /// This is Public Properties
+        /// </summary>
+
+        // Height
+        public double height
+        {
+            get
+            {
+                return this.myHeight;
+            }
+
+            set
+            {
+                this.myHeight = value;
+            }
+
+        }
+
+        // Weight
+        public double weight
+        {
+            get
+            {
+                return this.myWeight;
+            }
+
+            set
+            {
+                this.myWeight = value;
+            }
+
+        }
+
+        // BMI value
+        public double BMI
+        {
+            get
+            {
+                return this.myBMI;
+            }
+
+            set
+            {
+                this.myBMI = value;
+            }
+
+        }
+
         public BMICalculator()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BMICalculator_Load(object sender, EventArgs e)
         {
 
@@ -48,6 +110,50 @@ namespace Assignment5_BMI
         }
 
         private void BMIScaleTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (myBMI < 18.5)
+            {
+                BMIScaleTextBox.Text = "Notice: Underweight";
+            }
+
+            else if (myBMI >= 25 && myBMI <= 29.9)
+            {
+                BMIScaleTextBox.Text = "Notice: Overweight";
+            }
+
+            else if (myBMI > 30)
+            {
+                BMIScaleTextBox.Text = "Notice: Obese";
+            }
+
+            else if (myBMI >= 18.5 && myBMI <= 24.9)
+            {
+                BMIScaleTextBox.Text = "Notice: Normal weight";
+            }
+
+        }
+
+        private void HeightTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BMIResultTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CalculateBMIButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
