@@ -2,7 +2,7 @@
  * Student ID : 300921431
  * Date : August 15, 2017
  * Description : Assignment5 BMI Calculator
- * Version : 0.3 Set up the Notice message after calculating BMI
+ * Version : 0.4 Actual Calculation work
  */
 namespace Assignment5_BMI
 {
@@ -200,6 +200,7 @@ namespace Assignment5_BMI
             this.ResetButton.TabIndex = 7;
             this.ResetButton.Text = "Reset";
             this.ResetButton.UseVisualStyleBackColor = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // ResultLabel
             // 

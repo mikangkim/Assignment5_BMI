@@ -8,14 +8,14 @@ using System.Windows.Forms;
  * Student ID : 300921431
  * Date : August 15, 2017
  * Description : Assignment5 BMI Calculator
- * Version : 0.3 Set up the Notice message after calculating BMI
+ * Version : 0.4 Actual Calculation work
  */
 
 namespace Assignment5_BMI
 {
     static class Program
     {
-        public static BMICalculator bmiCalculator;
+        public static BMICalculator BMICalculator;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
