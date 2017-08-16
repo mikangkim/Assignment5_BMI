@@ -113,56 +113,6 @@ namespace Assignment5_BMI
                 BMIScaleTextBox.Text = "Notice: Normal weight";
             }
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BMICalculator_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BMICalculator_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void HeightLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ImperialRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void HeightLabel_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        /// <summary>
-        /// Showing the notice message after the calculation
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BMIScaleTextBox_TextChanged(object sender, EventArgs e)
-        {
- 
-        }
-
-        private void HeightTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BMIResultTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void CalculateBMIButton_Click(object sender, EventArgs e)
         {
             double myHeight = double.Parse(HeightTextBox.Text);
@@ -198,5 +148,35 @@ namespace Assignment5_BMI
             BMIScaleTextBox.Clear();
 
         }
+        /// <summary>
+        /// Showing the notice message after the calculation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BMIScaleTextBox_TextChanged(object sender, EventArgs e)
+        {
+ 
+        }
+
+        private void HeightTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BMIResultTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void BMICalculator_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HeightLabel_Click_1(object sender, EventArgs e)
+        {
+
+        }
+ 
     }
 }

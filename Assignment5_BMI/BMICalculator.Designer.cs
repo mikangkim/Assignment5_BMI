@@ -254,16 +254,16 @@ namespace Assignment5_BMI
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox BMIScaleTextBox;
         private System.Windows.Forms.TableLayoutPanel TableLayoutPanel;
-        private System.Windows.Forms.RadioButton RadioButton;
-        private System.Windows.Forms.RadioButton RadioButton1;
-        private System.Windows.Forms.Label WeightLabel;
-        private System.Windows.Forms.TextBox HeightTextBox;
-        private System.Windows.Forms.TextBox WeightTextBox;
-        private System.Windows.Forms.Label HeightLabel;
-        private System.Windows.Forms.Button CalculateBMIButton;
-        private System.Windows.Forms.Button ResetButton;
-        private System.Windows.Forms.Label ResultLabel;
-        private System.Windows.Forms.TextBox BMIResultTextBox;
+        private System.Windows.Forms.RadioButton RadioButton; //
+        private System.Windows.Forms.RadioButton RadioButton1; //
+        private System.Windows.Forms.Label WeightLabel; //
+        private System.Windows.Forms.TextBox HeightTextBox; //
+        private System.Windows.Forms.TextBox WeightTextBox; //
+        private System.Windows.Forms.Label HeightLabel; //
+        private System.Windows.Forms.Button CalculateBMIButton; //
+        private System.Windows.Forms.Button ResetButton; //
+        private System.Windows.Forms.Label ResultLabel; //
+        private System.Windows.Forms.TextBox BMIResultTextBox; //
 
        
     }
