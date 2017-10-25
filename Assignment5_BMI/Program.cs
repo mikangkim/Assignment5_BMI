@@ -25,6 +25,7 @@ namespace Assignment5_BMI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new BMICalculator());
+            Console.Write("Hello world!");
         }
     }
 }
